@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inverter Frase</title>
+</head>
+<body>
+    <input type="text" id="inputFrase" placeholder="Digite uma frase">
+    <button onclick="inverterFrase()">Inverter Frase</button>
+    <script>
+        function inverterFrase() {
+            var inputFrase = document.getElementById("inputFrase").value;
+            var palavras = inputFrase.split(' ').reverse().join(' ');
+            document.write('Frase invertida: '+ palavras +'');
+        }
+    </script>
+</body>
+</html>
